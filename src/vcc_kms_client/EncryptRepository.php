@@ -14,6 +14,7 @@ class EncryptRepository extends HandlerResponseHttp{
 
     public function encrypt($encrypt_dto)
     {
+        print json_encode($encrypt_dto);
         $result = $this->http_caller->post(
             Constants::ENCRYPT_API,
             json_encode($encrypt_dto),

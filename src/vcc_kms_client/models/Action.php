@@ -1,10 +1,16 @@
 <?php
-class Action{
+
+class Action
+{
     const ENCRYPT = 'ENCRYPT';
     const ENCRYPT_WITH_DATA_KEY = 'ENCRYPT_WITH_DATA_KEY';
     const ENCRYPT_WITH_DATA_KEY_PAIR = 'ENCRYPT_WITH_DATA_KEY_PAIR';
     const DECRYPT = 'DECRYPT';
     const DECRYPT_WITH_DATA_KEY = 'DECRYPT_WITH_DATA_KEY';
     const DECRYPT_WITH_DATA_KEY_PAIR = 'DECRYPT_WITH_DATA_KEY_PAIR';
+
+    const DELETE_KEY = 'DELETE_KEY';
+    const DISABLE_KEY = 'DISABLE_KEY';
+    const ENABLE_KEY = 'ENABLE_KEY';
 
 }

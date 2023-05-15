@@ -12,4 +12,5 @@ class Constants
     const DECRYPT_API = Constants::DOMAIN . '/kms-key/decrypt';
     const DECRYPT_WITH_DATA_KEY_API = Constants::DOMAIN . '/kms-key/decrypt-with-data-key';
     const DECRYPT_WITH_DATA_KEY_PAIR_API = Constants::DOMAIN . '/kms-key/decrypt-with-data-key-pair';
+    const CHANGE_STATE_KEY_API = Constants::DOMAIN . '/kms-key/change-state';
 }
