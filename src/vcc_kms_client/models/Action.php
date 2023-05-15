@@ -13,4 +13,7 @@ class Action
     const DISABLE_KEY = 'DISABLE_KEY';
     const ENABLE_KEY = 'ENABLE_KEY';
 
+    const UPDATE_ALIAS = 'UPDATE_ALIAS';
+    const DELETE_ALIAS = 'DELETE_ALIAS';
+
 }

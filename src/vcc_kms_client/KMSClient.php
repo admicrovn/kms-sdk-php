@@ -10,6 +10,8 @@ require_once('DecryptWithDataKeyPairService.php');
 require_once('DeleteKMSKeyService.php');
 require_once('DisableKMSKeyService.php');
 require_once('EnableKMSKeyService.php');
+require_once('DeleteAliasKeyService.php');
+require_once('UpdateAliasKeyService.php');
 
 class KMSClient
 {
@@ -80,4 +82,16 @@ class KMSClient
         $enable_kms_key_service = new EnableKMSKeyService($this->http_caller);
         return $enable_kms_key_service->enable_kms_key($request);
     }
+
+    public function delete_alias_key($request){
+        $delete_alias_key_service = new DeleteAliasKeyService($this->http_caller);
+        return $delete_alias_key_service->delete_alias_key($request);
+    }
+
+    public function update_alias_key($request){
+        $update_alias_key_service = new UpdateAliasKeyService($this->http_caller);
+        return $update_alias_key_service->update_alias_key($request);
+    }
+
+
 }
