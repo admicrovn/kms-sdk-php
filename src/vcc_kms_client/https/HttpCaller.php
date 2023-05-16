@@ -14,10 +14,12 @@ class HttpCaller
 
     public function get($api, $headers, $params, $timeout)
     {
+        $url = $this->kms_credentials->get_domain().$api;
+
         $curl = curl_init();
 
         if ($params != null) {
-            $api = sprintf("%s?%s", $api, http_build_query($params));
+            $url = sprintf("%s?%s", $url, http_build_query($params));
         }
 
         if ($headers != null) {
@@ -25,7 +27,7 @@ class HttpCaller
         }
 
         curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
-        curl_setopt($curl, CURLOPT_URL, $api);
+        curl_setopt($curl, CURLOPT_URL, $url);
         curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, true);
         curl_setopt($curl, CURLOPT_SSLCERT, $this->kms_credentials->get_cert_file_path());
         curl_setopt($curl, CURLOPT_SSLKEY, $this->kms_credentials->get_key_file_path());
@@ -42,10 +44,12 @@ class HttpCaller
 
     public function post($api, $body, $headers, $params, $timeout)
     {
+        $url = $this->kms_credentials->get_domain().$api;
+
         $curl = curl_init();
 
         if ($params != null) {
-            $api = sprintf("%s?%s", $api, http_build_query($params));
+            $url = sprintf("%s?%s", $url, http_build_query($params));
         }
 
         if ($headers != null) {
@@ -55,7 +59,7 @@ class HttpCaller
         curl_setopt($curl, CURLOPT_POST, 1);
         curl_setopt($curl, CURLOPT_POSTFIELDS, $body);
         curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
-        curl_setopt($curl, CURLOPT_URL, $api);
+        curl_setopt($curl, CURLOPT_URL, $url);
         curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, true);
         curl_setopt($curl, CURLOPT_SSLCERT, $this->kms_credentials->get_cert_file_path());
         curl_setopt($curl, CURLOPT_SSLKEY, $this->kms_credentials->get_key_file_path());

@@ -5,6 +5,7 @@ class KMSCredentials
     private $cer_file_path;
     private $key_file_path;
     private $ca_file_path;
+    private $domain;
 
     public function __construct($security_file_directory)
     {
@@ -41,6 +42,7 @@ class KMSCredentials
         $this->ca_file_path = $ca_file_path;
         $this->cer_file_path = $cer_file_path;
         $this->key_file_path = $key_file_path;
+        $this->domain = json_decode($security_file)->domain;
 
     }
 
@@ -59,4 +61,11 @@ class KMSCredentials
     {
         return $this->ca_file_path;
     }
+
+    public function get_domain()
+    {
+        return $this->domain;
+    }
+
+
 }

@@ -16,6 +16,10 @@ require_once('GenerateDataKeyService.php');
 require_once('GenerateDataKeyPairService.php');
 require_once('UpdateDescriptionKeyService.php');
 require_once('DescribeKMSKeyService.php');
+require_once('ListKMSKeyService.php');
+require_once('ListKMSKeyByAliasService.php');
+require_once('SignService.php');
+require_once('VerifyService.php');
 
 class KMSClient
 {
@@ -115,5 +119,25 @@ class KMSClient
     public function describe_kms_key($request){
         $describe_kms_key_service = new DescribeKMSKeyService($this->http_caller);
         return $describe_kms_key_service->describe_kms_key($request);
+    }
+
+    public function list_key($request){
+        $list_kms_key_service = new ListKMSKeyService($this->http_caller);
+        return $list_kms_key_service->list_kms_key($request);
+    }
+
+    public function list_key_by_alias($request){
+        $list_kms_key_by_alias_service = new ListKMSKeyByAliasService($this->http_caller);
+        return $list_kms_key_by_alias_service->list_kms_key_by_alias($request);
+    }
+
+    public function sign($request){
+        $sign_service = new SignService($this->http_caller);
+        return $sign_service->sign($request);
+    }
+
+    public function verify($request){
+        $verify_service = new VerifyService($this->http_caller);
+        return $verify_service->verify($request);
     }
 }
