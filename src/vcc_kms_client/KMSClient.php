@@ -12,6 +12,10 @@ require_once('DisableKMSKeyService.php');
 require_once('EnableKMSKeyService.php');
 require_once('DeleteAliasKeyService.php');
 require_once('UpdateAliasKeyService.php');
+require_once('GenerateDataKeyService.php');
+require_once('GenerateDataKeyPairService.php');
+require_once('UpdateDescriptionKeyService.php');
+require_once('DescribeKMSKeyService.php');
 
 class KMSClient
 {
@@ -93,5 +97,23 @@ class KMSClient
         return $update_alias_key_service->update_alias_key($request);
     }
 
+    public function generate_data_key($request){
+        $generate_data_key_service = new GenerateDataKeyService($this->http_caller);
+        return $generate_data_key_service->generate_data_key($request);
+    }
 
+    public function generate_data_key_pair($request){
+        $generate_data_key_pair_service = new GenerateDataKeyPairService($this->http_caller);
+        return $generate_data_key_pair_service->generate_data_key_pair($request);
+    }
+
+    public function update_description_key($request){
+        $update_description_key_service = new UpdateDescriptionKeyService($this->http_caller);
+        return $update_description_key_service->update_description_key($request);
+    }
+
+    public function describe_kms_key($request){
+        $describe_kms_key_service = new DescribeKMSKeyService($this->http_caller);
+        return $describe_kms_key_service->describe_kms_key($request);
+    }
 }

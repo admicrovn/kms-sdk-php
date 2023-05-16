@@ -17,4 +17,15 @@ class Constants
     const UPDATE_ALIAS_API = Constants::DOMAIN . '/kms-key/update-alias';
     const DELETE_ALIAS_API = Constants::DOMAIN . '/kms-key/delete-alias';
 
+    const GENERATE_DATA_KEY_API = Constants::DOMAIN . '/kms-key/generate-data-key';
+    const GENERATE_DATA_KEY_PAIR_API = Constants::DOMAIN . '/kms-key/generate-data-key-pair';
+
+    const UPDATE_DESCRIPTION_KEY_API = Constants::DOMAIN . '/kms-key/update-description';
+
+    const GET_KEY_BY_ID_API = Constants::DOMAIN . '/kms-key/id';
+    const LIST_KEY_API = Constants::DOMAIN . '/kms-key/list';
+    const GET_KEY_BY_ALIAS_API = Constants::DOMAIN . '/kms-key/alias';
+    const SIGN_API = Constants::DOMAIN . '/kms-key/sign';
+    const VERIFY_API = Constants::DOMAIN . '/kms-key/verify';
+
 }
