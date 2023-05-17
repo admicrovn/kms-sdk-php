@@ -1,7 +1,9 @@
 <?php
-require_once('dtos/ChangeStateDto.php');
-require_once('models/DeleteKMSKeyResult.php');
-require_once('ChangeStateKMSKeyRepository.php');
+require_once 'dtos/ChangeStateDto.php';
+require_once 'models/DeleteKMSKeyResult.php';
+require_once 'ChangeStateKMSKeyRepository.php';
+require_once 'models/KeyState.php';
+require_once 'models/Action.php';
 class DeleteKMSKeyService{
     private $http_caller;
 

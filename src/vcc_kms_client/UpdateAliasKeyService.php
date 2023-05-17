@@ -1,5 +1,8 @@
 <?php
-require_once('models/UpdateAliasKeyResult.php');
+require_once 'models/UpdateAliasKeyResult.php';
+require_once 'models/Action.php';
+require_once 'ManageAliasKeyRepository.php';
+require_once 'dtos/AliasKeyDto.php';
 class UpdateAliasKeyService{
     private $http_caller;
 

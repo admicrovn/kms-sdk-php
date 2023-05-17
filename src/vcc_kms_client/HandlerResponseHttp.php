@@ -1,10 +1,10 @@
 <?php
-require_once('models/Code.php');
-require_once('exceptions/InternalServerException.php');
-require_once('exceptions/InvalidDataException.php');
-require_once('exceptions/InvalidRequestException.php');
-require_once('exceptions/NotFoundException.php');
-require_once('exceptions/UnauthorizedException.php');
+require_once 'models/Code.php';
+require_once 'exceptions/InternalServerException.php';
+require_once 'exceptions/InvalidDataException.php';
+require_once 'exceptions/InvalidRequestException.php';
+require_once 'exceptions/NotFoundException.php';
+require_once 'exceptions/UnauthorizedException.php';
 abstract class HandlerResponseHttp
 {
     public function handler_response($response_body)

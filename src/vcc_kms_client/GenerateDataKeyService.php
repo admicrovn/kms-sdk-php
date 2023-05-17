@@ -1,7 +1,8 @@
 <?php
-require_once('dtos/GenerateDataKeyDto.php');
-require_once('models/GenerateDataKeyResult.php');
-require_once('GenerateDataKeyRepository.php');
+require_once 'dtos/GenerateDataKeyDto.php';
+require_once 'models/GenerateDataKeyResult.php';
+require_once 'GenerateDataKeyRepository.php';
+require_once 'models/Action.php';
 
 class GenerateDataKeyService
 {

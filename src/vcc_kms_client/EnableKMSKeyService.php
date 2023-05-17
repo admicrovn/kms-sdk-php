@@ -1,5 +1,9 @@
 <?php
-require_once('models/EnableKMSKeyResult.php');
+require_once 'models/EnableKMSKeyResult.php';
+require_once 'models/KeyState.php';
+require_once 'models/Action.php';
+require_once 'dtos/ChangeStateDto.php';
+require_once 'ChangeStateKMSKeyRepository.php';
 class EnableKMSKeyService{
     private $http_caller;
 

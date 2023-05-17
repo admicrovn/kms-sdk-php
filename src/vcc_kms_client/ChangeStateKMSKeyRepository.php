@@ -1,4 +1,6 @@
 <?php
+require_once 'HandlerResponseHttp.php';
+require_once 'constants/Constants.php';
 class ChangeStateKMSKeyRepository extends HandlerResponseHttp
 {
     private $http_caller;

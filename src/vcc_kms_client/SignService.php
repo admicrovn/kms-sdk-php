@@ -1,7 +1,8 @@
 <?php
-require('dtos/SignDto.php');
-require('SignRepository.php');
-require('models/SignResult.php');
+require_once 'dtos/SignDto.php';
+require_once 'SignRepository.php';
+require_once 'models/SignResult.php';
+require_once 'models/Action.php';
 class SignService
 {
     private $http_caller;

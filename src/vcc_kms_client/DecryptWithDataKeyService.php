@@ -1,9 +1,9 @@
 <?php
-require_once('dtos/DecryptDto.php');
-require_once('models/ContentType.php');
-require_once('models/Action.php');
-require_once('DecryptRepository.php');
-require_once('models/DecryptWithDataKeyResult.php');
+require_once 'dtos/DecryptDto.php';
+require_once 'models/ContentType.php';
+require_once 'models/Action.php';
+require_once 'DecryptRepository.php';
+require_once 'models/DecryptWithDataKeyResult.php';
 class DecryptWithDataKeyService{
     private $http_caller;
 

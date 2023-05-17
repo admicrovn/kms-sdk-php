@@ -1,7 +1,7 @@
 <?php
-require_once('ListKMSKeyRepository.php');
-require_once('models/ListKMSKeyByAliasResult.php');
-require_once('models/KMSKey.php');
+require_once 'ListKMSKeyRepository.php';
+require_once 'models/ListKMSKeyByAliasResult.php';
+require_once 'models/KMSKey.php';
 class ListKMSKeyByAliasService
 {
     private $http_caller;

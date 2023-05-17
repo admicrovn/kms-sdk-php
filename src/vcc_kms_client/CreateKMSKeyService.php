@@ -1,8 +1,8 @@
 <?php
-require_once('dtos/KMSKeyDto.php');
-require_once('models/KeyState.php');
-require_once('CreateKMSKeyRepository.php');
-require_once('models/CreateKMSKeyResult.php');
+require_once 'dtos/KMSKeyDto.php';
+require_once 'models/KeyState.php';
+require_once 'CreateKMSKeyRepository.php';
+require_once 'models/CreateKMSKeyResult.php';
 class CreateKMSKeyService
 {
     private $http_caller;

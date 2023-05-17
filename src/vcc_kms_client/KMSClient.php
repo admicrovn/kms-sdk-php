@@ -1,25 +1,25 @@
 <?php
-require_once('https/HttpCaller.php');
-require_once('CreateKMSKeyService.php');
-require_once('EncryptService.php');
-require_once('EncryptWithDataKeyService.php');
-require_once('EncryptWithDataKeyPairService.php');
-require_once('DecryptService.php');
-require_once('DecryptWithDataKeyService.php');
-require_once('DecryptWithDataKeyPairService.php');
-require_once('DeleteKMSKeyService.php');
-require_once('DisableKMSKeyService.php');
-require_once('EnableKMSKeyService.php');
-require_once('DeleteAliasKeyService.php');
-require_once('UpdateAliasKeyService.php');
-require_once('GenerateDataKeyService.php');
-require_once('GenerateDataKeyPairService.php');
-require_once('UpdateDescriptionKeyService.php');
-require_once('DescribeKMSKeyService.php');
-require_once('ListKMSKeyService.php');
-require_once('ListKMSKeyByAliasService.php');
-require_once('SignService.php');
-require_once('VerifyService.php');
+require_once 'https/HttpCaller.php';
+require_once 'CreateKMSKeyService.php';
+require_once 'EncryptService.php';
+require_once 'EncryptWithDataKeyService.php';
+require_once 'EncryptWithDataKeyPairService.php';
+require_once 'DecryptService.php';
+require_once 'DecryptWithDataKeyService.php';
+require_once 'DecryptWithDataKeyPairService.php';
+require_once 'DeleteKMSKeyService.php';
+require_once 'DisableKMSKeyService.php';
+require_once 'EnableKMSKeyService.php';
+require_once 'DeleteAliasKeyService.php';
+require_once 'UpdateAliasKeyService.php';
+require_once 'GenerateDataKeyService.php';
+require_once 'GenerateDataKeyPairService.php';
+require_once 'UpdateDescriptionKeyService.php';
+require_once 'DescribeKMSKeyService.php';
+require_once 'ListKMSKeyService.php';
+require_once 'ListKMSKeyByAliasService.php';
+require_once 'SignService.php';
+require_once 'VerifyService.php';
 
 class KMSClient
 {

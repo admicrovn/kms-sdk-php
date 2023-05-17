@@ -2,5 +2,4 @@
 
 class InvalidDataException extends Exception
 {
-
 }

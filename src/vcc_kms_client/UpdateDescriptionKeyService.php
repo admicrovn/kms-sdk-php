@@ -1,7 +1,8 @@
 <?php
-require_once('models/UpdateDescriptionKeyResult.php');
-require_once('UpdateDescriptionKeyRepository.php');
-require_once('dtos/DescriptionKeyDto.php');
+require_once 'models/UpdateDescriptionKeyResult.php';
+require_once 'UpdateDescriptionKeyRepository.php';
+require_once 'dtos/DescriptionKeyDto.php';
+require_once 'models/Action.php';
 class UpdateDescriptionKeyService{
     private $http_caller;
 

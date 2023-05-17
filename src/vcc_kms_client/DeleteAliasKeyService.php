@@ -1,7 +1,8 @@
 <?php
-require_once('dtos/AliasKeyDto.php');
-require_once('ManageAliasKeyRepository.php');
-require_once('models/DeleteAliasKeyResult.php');
+require_once 'dtos/AliasKeyDto.php';
+require_once 'ManageAliasKeyRepository.php';
+require_once 'models/DeleteAliasKeyResult.php';
+require_once 'models/Action.php';
 class DeleteAliasKeyService{
     private $http_caller;
 

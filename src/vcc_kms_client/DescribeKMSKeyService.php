@@ -1,7 +1,7 @@
 <?php
-require_once('dtos/KMSKeyDto.php');
-require_once('GetKMSKeyRepository.php');
-require_once('models/DescribeKMSKeyResult.php');
+require_once 'GetKMSKeyRepository.php';
+require_once 'models/DescribeKMSKeyResult.php';
+require_once 'models/Action.php';
 class DescribeKMSKeyService
 {
     private $http_caller;

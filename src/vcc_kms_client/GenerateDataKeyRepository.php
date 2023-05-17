@@ -1,4 +1,6 @@
 <?php
+require_once 'HandlerResponseHttp.php';
+require_once 'constants/Constants.php';
 class GenerateDataKeyRepository extends HandlerResponseHttp{
 
     private $http_caller;

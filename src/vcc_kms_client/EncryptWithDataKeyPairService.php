@@ -1,9 +1,9 @@
 <?php
-require_once('dtos/EncryptDto.php');
-require_once('models/ContentType.php');
-require_once('models/Action.php');
-require_once('EncryptRepository.php');
-require_once('models/EncryptWithDataKeyPairResult.php');
+require_once 'dtos/EncryptDto.php';
+require_once 'models/ContentType.php';
+require_once 'models/Action.php';
+require_once 'EncryptRepository.php';
+require_once 'models/EncryptWithDataKeyPairResult.php';
 class EncryptWithDataKeyPairService{
     private $http_caller;
 

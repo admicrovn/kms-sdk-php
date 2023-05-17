@@ -1,9 +1,9 @@
 <?php
 
-require_once('../src/vcc_kms_client/KMSCredentials.php');
-require_once('../src/vcc_kms_client/KMSClient.php');
-require_once('../src/vcc_kms_client/models/VerifyRequest.php');
-require_once('../src/vcc_kms_client/models/SignAlgorithm.php');
+require_once '../src/vcc_kms_client/auth/KMSCredentials.php';
+require_once '../src/vcc_kms_client/KMSClient.php';
+require_once '../src/vcc_kms_client/models/VerifyRequest.php';
+require_once '../src/vcc_kms_client/models/SignAlgorithm.php';
 
 $credentials = new KMSCredentials('security_file.json');
 $kms = new KMSClient($credentials);

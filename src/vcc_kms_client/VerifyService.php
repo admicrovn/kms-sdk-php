@@ -1,7 +1,8 @@
 <?php
-require('dtos/VerifyDto.php');
-require('VerifyRepository.php');
-require('models/VerifyResult.php');
+require_once 'dtos/VerifyDto.php';
+require_once 'VerifyRepository.php';
+require_once 'models/VerifyResult.php';
+require_once 'models/Action.php';
 class VerifyService
 {
     private $http_caller;
