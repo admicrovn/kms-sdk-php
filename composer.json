@@ -1,0 +1,19 @@
+{
+    "name": "vcc/kms-client",
+    "description": "KMS is a key management system for data encryption, decryption, signing and verification",
+    "type": "library",
+    "license": "proprietary",
+    "autoload": {
+        "psr-4": {
+            "": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "cuongpm",
+            "email": "cuongphammanh@tech.admicro.vn"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}

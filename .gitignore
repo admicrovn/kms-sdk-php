@@ -34,3 +34,4 @@ build/
 file/
 private/
 tests/security_file.json
+/vendor/
