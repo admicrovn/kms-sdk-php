@@ -35,7 +35,7 @@ class ListKMSKeyRepository extends HandlerResponseHttp
 
     public function get_by_alias($alias, $limit, $offset)
     {
-        $alias = str_replace(' ', '%20',$alias);
+        $alias = urlencode($alias);
 
         $params = array();
         if ($limit != null) {
