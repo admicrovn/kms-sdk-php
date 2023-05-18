@@ -4,7 +4,7 @@
 
 ### Install
 ```php
-$ composer require vcc/kms-client
+$ composer require admicro/kms-client
 ```
 
 ## Table of contents
