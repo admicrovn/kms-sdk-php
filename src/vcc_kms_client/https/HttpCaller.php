@@ -37,7 +37,6 @@ class HttpCaller
         curl_setopt($curl, CURLOPT_TIMEOUT, $timeout);
 
         $resp = curl_exec($curl);
-        $this->deleteFiles();
         curl_close($curl);
         return $resp;
     }
@@ -69,23 +68,7 @@ class HttpCaller
         curl_setopt($curl, CURLOPT_TIMEOUT, $timeout);
 
         $resp = curl_exec($curl);
-        $this->deleteFiles();
         curl_close($curl);
         return $resp;
     }
-
-    function deleteFiles()
-    {
-        if(is_file('key.pem')) {
-            unlink('key.pem');
-        }
-        if(is_file('ca.pem')) {
-            unlink('ca.pem');
-        }
-        if(is_file('cer.pem')) {
-            unlink('cer.pem');
-        }
-
-    }
-
 }

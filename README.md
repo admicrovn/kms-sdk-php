@@ -3,7 +3,7 @@
 # Install library
 
 ### Install
-```php
+```shell
 $ composer require admicro/kms-client
 ```
 
